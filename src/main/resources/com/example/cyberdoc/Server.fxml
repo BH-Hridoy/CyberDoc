@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="600.0" styleClass="bg-dark" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cyberdoc.ServerController">
+   <children>
+      <AnchorPane fx:id="ap_main" layoutX="61.0" layoutY="38.0" prefHeight="396" prefWidth="478" stylesheets="@css/style.css">
+         <children>
+            <Button fx:id="button_send" layoutX="352.0" layoutY="338.0" prefHeight="30.0" prefWidth="101.0" stylesheets="@css/style.css" text="Send">
+               <styleClass>
+                  <String fx:value="square-btn" />
+                  <String fx:value="btn-pd-right" />
+               </styleClass></Button>
+            <TextField fx:id="tf_message" layoutX="35.0" layoutY="338.0" prefHeight="26" prefWidth="302.0" promptText="Your message..." styleClass="square-btn" stylesheets="@css/style.css" />
+            <ScrollPane fx:id="sp_main" fitToWidth="true" layoutX="35.0" layoutY="60.0" prefHeight="256" prefWidth="418" stylesheets="@css/style.css">
+               <content>
+                  <VBox fx:id="vbox_messages" alignment="BOTTOM_LEFT" prefHeight="248" prefWidth="412" styleClass="bg-light-dark" stylesheets="@css/style.css" />
+               </content>
+            </ScrollPane>
+            <Label layoutX="214.0" layoutY="16.0" text="CYBER" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="271.0" layoutY="16.0" text="DOC" textFill="#f99b1f">
+               <font>
+                  <Font name="SansSerif Bold" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="36.0" layoutX="177.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icon.png" />
+               </image>
+            </ImageView>
+            <FontAwesomeIcon fill="#272b2f" glyphName="SEND" layoutX="422.0" layoutY="358.0" />
+         </children>
+         <styleClass>
+            <String fx:value="bg-light-dark" />
+            <String fx:value="radius" />
+         </styleClass>
+      </AnchorPane>
+   </children>
+</AnchorPane>

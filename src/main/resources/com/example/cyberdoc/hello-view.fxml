@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1350.0" styleClass="home-bg" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cyberdoc.HelloController">
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="66.0" prefWidth="762.0" styleClass="footer-bg-color" stylesheets="@css/style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#bcafaf" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright 2023 © Code Commandos. All Right Reserved." />
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <HBox alignment="TOP_CENTER" prefHeight="80.0" prefWidth="1400.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" maxWidth="1290.0" prefHeight="77.0" prefWidth="1290.0" stylesheets="@css/style.css" HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/CyberDoc-shortlogo.png" />
+                     </image>
+                  </ImageView>
+                  <Pane maxWidth="719.0" minWidth="500.0" prefHeight="66.0" prefWidth="719.0" HBox.hgrow="ALWAYS" />
+                  <HBox alignment="CENTER_RIGHT" prefHeight="66.0" prefWidth="430.0" spacing="20.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#switchToHome" prefHeight="40.0" stylesheets="@css/style.css" text="Home" textFill="#fe8f01">
+                           <styleClass>
+                              <String fx:value="transparent" />
+                              <String fx:value="active" />
+                              <String fx:value="menu-button" />
+                           </styleClass>
+                           <font>
+                              <Font name="SansSerif Regular" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="40.0" stylesheets="@css/style.css" text="About Us">
+                           <styleClass>
+                              <String fx:value="transparent" />
+                              <String fx:value="menu-button" />
+                           </styleClass>
+                           <font>
+                              <Font name="SansSerif Regular" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#switchToLogin" prefHeight="40.0" prefWidth="125.0" styleClass="button-colored" stylesheets="@css/style.css" text="Log in" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER_LEFT" prefHeight="584.0" prefWidth="608.0" spacing="20.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Introducing" wrappingWidth="429.953125">
+                     <font>
+                        <Font name="SansSerif Bold" size="25.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#fe8f01" strokeType="OUTSIDE" strokeWidth="0.0" text="CYBERDOC" wrappingWidth="429.953125">
+                     <font>
+                        <Font name="SansSerif Bold" size="54.0" />
+                     </font>
+                  </Text>
+                  <Label text="Your Free Online Medical Haven.&#10;From Vital Blood to Lifesaving Funds,&#10;We're Here to Heal, Unite,&#10;and Make a Difference Together." textFill="WHITE">
+                     <font>
+                        <Font name="SansSerif Regular" size="22.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#switchToLogin" prefHeight="40.0" prefWidth="140.0" styleClass="button-colored" stylesheets="@css/style.css" text="Log in" />
+               </children>
+               <HBox.margin>
+                  <Insets left="150.0" />
+               </HBox.margin>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="584.0" prefWidth="584.0">
+               <children>
+                  <Pane prefWidth="409.0">
+                     <children>
+                        <Circle fill="#fff3e5" layoutX="189.0" layoutY="150.0" radius="178.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                        <ImageView fx:id="doctorVector" fitHeight="181.0" fitWidth="117.0" layoutX="135.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/icons/doctor-croped.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="chat1" fitHeight="53.0" fitWidth="129.0" layoutX="124.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/icons/7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="chat2" fitHeight="40.0" fitWidth="129.0" layoutX="125.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/icons/8.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="chat3" fitHeight="15.0" fitWidth="183.0" layoutX="135.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/icons/9.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="capsule" fitHeight="80.0" fitWidth="80.0" layoutX="44.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/icons/1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="heartRate" fitHeight="80.0" fitWidth="80.0" layoutX="252.0" layoutY="-33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/icons/2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="medBox" fitHeight="80.0" fitWidth="80.0" layoutX="-23.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/icons/4.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="dna" fitHeight="80.0" fitWidth="80.0" layoutX="324.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/icons/6.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="sthetoscope" fitHeight="80.0" fitWidth="80.0" layoutX="289.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/icons/5.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="syringe" fitHeight="80.0" fitWidth="80.0" layoutX="7.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/icons/3.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <HBox.margin>
+                        <Insets top="150.0" />
+                     </HBox.margin>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

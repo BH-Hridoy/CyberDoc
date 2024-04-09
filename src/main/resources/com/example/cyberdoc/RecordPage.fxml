@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cyberdoc.RecordPageController">
+   <children>
+      <AnchorPane fx:id="recordpage_mainForm" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="14.0" layoutY="23.0" styleClass="header-2" stylesheets="@css/DoctorMainPanelDesign.css" text="Patients">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="recordpage_search" layoutX="561.0" layoutY="26.0" prefHeight="30.0" prefWidth="225.0" promptText="Search" styleClass="search" stylesheets="@css/DoctorMainPanelDesign.css" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="26.0" />
+            <TableView fx:id="recordpage_tableView" layoutX="20.0" layoutY="77.0" prefHeight="401.0" prefWidth="761.0" stylesheets="@css/DoctorMainPanelDesign.css" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="77.0">
+              <columns>
+                <TableColumn fx:id="recordpage_col_patientID" prefWidth="92.0" text="Patient ID" />
+                <TableColumn fx:id="recordpage_col_name" prefWidth="122.0" text="Name" />
+                  <TableColumn fx:id="recordpage_col_gender" prefWidth="73.0" text="Gender" />
+                  <TableColumn fx:id="recordpage_col_mobileNumber" prefWidth="103.0" text="Mobile Number" />
+                  <TableColumn fx:id="recordpage_col_address" prefWidth="97.0" text="Address" />
+                  <TableColumn fx:id="recordpage_col_dateCreated" prefWidth="86.0" text="Date Created" />
+                  <TableColumn fx:id="recordpage_col_dateModified" minWidth="0.0" prefWidth="85.0" text="Date Modified" />
+                  <TableColumn fx:id="recordpage_col_dateDeleted" minWidth="0.0" prefWidth="86.0" text="Date Deleted" />
+                  <TableColumn fx:id="recordpage_col_action" minWidth="0.0" prefWidth="158.0" text="Action" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

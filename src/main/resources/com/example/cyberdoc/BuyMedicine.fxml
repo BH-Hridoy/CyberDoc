@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1350.0" styleClass="bg-dark" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cyberdoc.BuyMedicineController">
+   <children>
+      <WebView fx:id="buyMedicineWebView" layoutX="85.0" layoutY="135.0" prefHeight="730.0" prefWidth="1350.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Button layoutX="1072.0" layoutY="640.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="47.0" prefWidth="219.0" styleClass="button-colored" stylesheets="@css/style.css" text="Back to Cyberdoc" />
+   </children>
+</AnchorPane>

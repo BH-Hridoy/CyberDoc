@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="314.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cyberdoc.loginController">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="352.0" prefWidth="314.0">
+         <children>
+            <AnchorPane fx:id="login_form" layoutX="99.0" layoutY="134.0" prefHeight="352.0" prefWidth="314.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Text layoutX="138.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="126.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Portal" />
+                  <TextField fx:id="login_username" layoutX="73.0" layoutY="85.0" prefHeight="30.0" prefWidth="210.0" promptText="Username" />
+                  <PasswordField fx:id="login_password" layoutX="73.0" layoutY="141.0" prefHeight="30.0" prefWidth="210.0" promptText="Password" />
+                  <TextField fx:id="login_showPassword" layoutX="87.0" layoutY="210.0" prefHeight="30.0" prefWidth="210.0" promptText="Password" visible="false" />
+                  <CheckBox fx:id="login_checkBox" layoutX="36.0" layoutY="189.0" mnemonicParsing="false" onAction="#loginShowPassword" text="Show Password" />
+                  <Button fx:id="login_loginBtn" layoutX="36.0" layoutY="230.0" mnemonicParsing="false" onAction="#loginAccount" prefHeight="39.0" prefWidth="250.0" text="Login" />
+                  <Label layoutX="50.0" layoutY="363.0" text="Don't have any account?" />
+                  <Hyperlink fx:id="login_registerHere" layoutX="187.0" layoutY="360.0" onAction="#switchForm" text="Register Here" />
+                  <ComboBox fx:id="login_user" layoutX="86.0" layoutY="305.0" onAction="#switchPage" prefWidth="150.0" promptText="Select User" />
+                  <FontAwesomeIcon glyphName="ENVELOPE" layoutX="38.0" layoutY="108.0" size="2em" />
+                  <FontAwesomeIcon glyphName="LOCK" layoutX="40.0" layoutY="166.0" size="2.5em" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="register_form" layoutX="10.0" layoutY="40.0" maxHeight="452.0" maxWidth="314.0" prefHeight="452.0" prefWidth="314.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Text layoutX="125.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="122.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Portal" />
+                  <TextField fx:id="register_username" layoutX="74.0" layoutY="156.0" prefHeight="30.0" prefWidth="210.0" promptText="Username" />
+                  <PasswordField fx:id="register_password" layoutX="74.0" layoutY="201.0" prefHeight="30.0" prefWidth="210.0" promptText="Password" />
+                  <Button fx:id="register_signupBtn" layoutX="33.0" layoutY="266.0" mnemonicParsing="false" onAction="#registerAccount" prefHeight="39.0" prefWidth="250.0" text="Sign Up" />
+                  <Label layoutX="45.0" layoutY="348.0" text="Already have an account?" />
+                  <Hyperlink fx:id="register_loginHere" layoutX="197.0" layoutY="345.0" onAction="#switchForm" text="Login Here" />
+                  <TextField fx:id="register_email" layoutX="74.0" layoutY="110.0" prefHeight="30.0" prefWidth="210.0" promptText="Email Address" />
+                  <FontAwesomeIcon glyphName="ENVELOPE" layoutX="41.0" layoutY="133.0" size="2em" />
+                  <FontAwesomeIcon glyphName="USER" layoutX="41.0" layoutY="181.0" size="2.5em" />
+                  <FontAwesomeIcon glyphName="LOCK" layoutX="43.0" layoutY="226.0" size="2.5em" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

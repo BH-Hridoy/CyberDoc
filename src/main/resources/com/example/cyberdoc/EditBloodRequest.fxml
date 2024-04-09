@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cyberdoc.EditBloodRequestController">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="425.0" prefWidth="621.0" stylesheets="@css/DoctorMainPanelDesign.css">
+               <styleClass>
+                  <String fx:value="white-bg" />
+                  <String fx:value="shadow" />
+                  <String fx:value="radius" />
+               </styleClass>
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" styleClass="header-2" stylesheets="@css/DoctorMainPanelDesign.css" text="Edit Blood Request">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="6.0" layoutY="90.0" prefHeight="19.0" prefWidth="117.0" text="Applicant's Name:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="29.0" layoutY="127.0" prefHeight="19.0" prefWidth="94.0" text="Email:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="29.0" layoutY="162.0" prefHeight="19.0" prefWidth="94.0" text="Patient Name:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="6.0" layoutY="198.0" prefHeight="19.0" prefWidth="117.0" text="Gender:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="301.0" layoutY="266.0" prefHeight="19.0" prefWidth="94.0" text="Status:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="pd_status" layoutX="401.0" layoutY="263.0" prefHeight="25.0" prefWidth="185.0" promptText="Choose..." styleClass="choice-option" stylesheets="@css/style.css" />
+                  <Button fx:id="edit_updateBtn" layoutX="236.0" layoutY="372.0" mnemonicParsing="false" onAction="#updateBtn" prefHeight="30.0" prefWidth="149.0" styleClass="btn-main" stylesheets="@css/style.css" text="Update" />
+                  <Label alignment="CENTER_RIGHT" layoutX="6.0" layoutY="232.0" prefHeight="19.0" prefWidth="117.0" text="Age:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="6.0" layoutY="265.0" prefHeight="19.0" prefWidth="117.0" text="Issue:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="6.0" layoutY="300.0" prefHeight="19.0" prefWidth="117.0" text="Mobile:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="280.0" layoutY="90.0" prefHeight="19.0" prefWidth="117.0" text="Relation:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="280.0" layoutY="126.0" prefHeight="19.0" prefWidth="117.0" text="Address:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="280.0" layoutY="161.0" prefHeight="19.0" prefWidth="117.0" text="Hospital Name:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pd_name" layoutX="131.0" layoutY="90.0" prefHeight="19.0" prefWidth="149.0" text="Label">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pd_email" layoutX="131.0" layoutY="126.0" prefHeight="19.0" prefWidth="149.0" text="Label">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pd_pName" layoutX="131.0" layoutY="162.0" prefHeight="19.0" prefWidth="149.0" text="Label">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pd_gender" layoutX="131.0" layoutY="198.0" prefHeight="19.0" prefWidth="149.0" text="Label">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pd_age" layoutX="131.0" layoutY="232.0" prefHeight="19.0" prefWidth="149.0" text="Label">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pd_issue" layoutX="131.0" layoutY="267.0" prefHeight="19.0" prefWidth="149.0" text="Label">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pd_mobile" layoutX="131.0" layoutY="300.0" prefHeight="19.0" prefWidth="149.0" text="Label">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pd_relation" layoutX="405.0" layoutY="90.0" prefHeight="19.0" prefWidth="149.0" text="Label">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pd_address" layoutX="405.0" layoutY="126.0" prefHeight="19.0" prefWidth="149.0" text="Label">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pd_hospitalName" layoutX="405.0" layoutY="162.0" prefHeight="19.0" prefWidth="149.0" text="Label">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="280.0" layoutY="198.0" prefHeight="19.0" prefWidth="117.0" text="Hospital Location:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pd_hospitalLocation" layoutX="405.0" layoutY="199.0" prefHeight="19.0" prefWidth="149.0" text="Label">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="280.0" layoutY="232.0" prefHeight="19.0" prefWidth="117.0" text="Date:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pd_hospitalDate" layoutX="405.0" layoutY="233.0" prefHeight="19.0" prefWidth="149.0" text="Label">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
